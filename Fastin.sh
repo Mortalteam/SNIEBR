@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
-cd SNIEBR
-screen -S SNIEBR -X kill
-screen -S SNIEBR ./SnB
+sudo ls
+cd SNIEBR 
+chmod +x tg
+chmod +x SB
+chmod +x SnB
+./SB
