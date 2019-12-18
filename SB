@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-cd FAYNL
+cd SNIEBR
 screen -S SNIEBR -X kill
 screen -S SNIEBR ./SnB
