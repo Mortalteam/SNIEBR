@@ -1,7 +1,7 @@
 # SnieBr
 
 
- `Installation`
+ Installation
 
 
 install :
