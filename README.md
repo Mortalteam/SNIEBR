@@ -1,4 +1,4 @@
-# `SnieBr`
+# SnieBr
 
 
  `Installation`
