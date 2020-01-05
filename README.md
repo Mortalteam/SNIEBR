@@ -1,6 +1,6 @@
 # SnieBr
 
-# Installation
+#Installation
 
 `git clone https://github.com/SNIEBRMAX/SNIEBR  && cd SNIEBR && chmod +x install.sh && ./install.sh`
 
