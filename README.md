@@ -12,3 +12,7 @@ install :
 When the installation is completed,
 
 1. He will asks the token like :
+
+# kud alrun
+
+`./SNIEBR/SnB`
